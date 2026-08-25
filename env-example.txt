@@ -1,0 +1,20 @@
+# Port (Render le fournit automatiquement, pas besoin de le définir en prod)
+PORT=3000
+
+# Secret pour signer les tokens JWT (génère une longue chaîne aléatoire)
+JWT_SECRET=change-moi-avec-une-chaine-aleatoire-longue
+
+# Clé secrète Stripe (mode test : commence par sk_test_)
+STRIPE_SECRET_KEY=sk_test_xxx
+
+# ID du prix Stripe pour l'abonnement (celui que tu as déjà créé)
+STRIPE_PRICE_ID=price_1U87CZ3AHFCLMJ7JNCqgc3w3
+
+# Secret du webhook Stripe (généré quand tu crées le endpoint webhook sur Stripe)
+STRIPE_WEBHOOK_SECRET=whsec_xxx
+
+# URL de ta landing page / frontend Netlify (pour les redirections après paiement)
+FRONTEND_URL=https://coruscating-chebakia-fb387a.netlify.app
+
+# Chemin de la base SQLite (sur Render, pointer vers le disque persistant, ex: /data/devis-express.db)
+DB_PATH=./devis-express.db
